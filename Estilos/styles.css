@@ -1,11 +1,30 @@
-.navbar{display:flex;}
-
-
-.menu{
+.navegador {
     display:flex;
+    background: grey;
+    align-items: center;
+
+}
+
+.logo {
+    margin-left: 150px;
+    padding: 50px;
+}
+
+.menu {
+    display:flex; 
+    float: right;
+
 }
 
 
-ul{display:flex;}
+ul {
+    display:flex; 
+    list-style-type: none;
 
-a:hover
+}
+
+li {
+    padding: 8%;
+    display: inline-flex;
+
+}
