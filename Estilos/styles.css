@@ -73,11 +73,10 @@ html {
     max-width: 1440px;
     max-height: 590px;
     align-items: center;
-    justify-content: space-between;
-    padding: 50px 12%;
+    padding: 75px 12%;
 
     font-weight: 400px;
-
+    
 }
 
 #columna1Main{
@@ -133,7 +132,12 @@ html {
 
 }
 
+.columna2Main {
+    align-items: right;
+    justify-content: space-between;
+}
 .columna2Main img{
-    width: 700px;
-;
+    width: 600px;
+    margin: 0;
+
 }
