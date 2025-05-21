@@ -1,30 +1,94 @@
-.navegador {
-    display:flex;
-    background: grey;
+/* GENERAL */
+
+html {
+    font-family: "Rubik", sans-serif;
+    color:#252B46;
+}
+
+/* HEADER */
+.navbar {
+    background-color: white;
+    display: flex;
+    max-width: 1440px;
+    max-height: 80px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 15%;
+
+}
+
+.logo img {
+  height: 30px;
+}
+
+
+
+/* MENU - LISTA */
+.menu ul {
+    display: flex; 
+    list-style-type: none;
+
+    margin: 0;
+    padding: 0;
+    gap: 2rem;
+}
+
+.menu li {
+    padding: 25px;
+}
+
+.menu-boton {
+    background-color:#FA5959;
+    color: white;
+    
+    padding: 20px 8%;
+    border-radius: 10px;
+
+}    
+
+
+
+.menu a {
+    text-decoration: none;
+    color: #222222;
+} 
+
+.menu a:hover {
+    color: #FA5959;
+}
+
+#contenedorMain{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 150px;
     align-items: center;
 
 }
 
-.logo {
-    margin-left: 150px;
-    padding: 50px;
-}
-
-.menu {
-    display:flex; 
-    float: right;
+#columna1Main{
+    display: flex;
+    width: 50%;
 
 }
 
-
-ul {
-    display:flex; 
-    list-style-type: none;
-
+h3 {
+    text-decoration: bold;
+    font-size: 35px;
+    color:#000000
 }
 
-li {
-    padding: 8%;
-    display: inline-flex;
+p {
+    color: #222222;
+    font-size:15px;
+}
 
+button {
+    padding: 20px;
+    background-color:#5265E1;
+    color:white;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    
 }
