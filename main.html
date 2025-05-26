@@ -8,36 +8,62 @@
 
     <title>Bookmark</title>
     <link rel="icon" type="image" href="recursos/Recursosentrega S1.2.-20250519/Imagenes/favicon-32x32.png">
-    <link rel="stylesheet" href="Estilos/styles.css "/>
-
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Estilos/styles.css "/>
 
 </head>
 
 <body>
        
+    <!-- Header -->
     <header>
-        <nav class="navbar">
-            <div class="logo">
-                <img src="recursos/Recursosentrega S1.2.-20250519/Imagenes/logo-bookmark.svg" alt="" width="" height="">
+        
+        <!-- Header desktop -->
+        <div id="headerDesktop">
+            <nav class="navbarDesktop">
+                <div class="logo">
+                    <img src="recursos/Recursosentrega S1.2.-20250519/Imagenes/logo-bookmark.svg" alt="Brand logo" width="" height="">
+                </div>
+
+                <div class="menu">
+                    <ul>
+                        <li><a href="#">FEATURES</a></li>
+                        <li><a href="#">PRICING</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                        <button class="menu-boton">LOGIN</button>
+
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Header mobile -->
+        <div id="headerMobile">
+            <nav class="navbarMobile">
+                <div class="logoMobile">
+                    <img src="recursos/Recursosentrega S1.2.-20250519/Imagenes/logo-bookmark.svg" alt="Brand logo" width="" height="">
+                </div>
+
+            <div class="containerCheck">
+                <input type="checkbox" id="check" />
+                    <label for="check" class="showMenu">
+                        <img src="recursos/Recursosentrega S1.2.-20250519/Imagenes/icon-hamburger.svg">
+                    </label>
             </div>
 
-            <div class="menu">
-                <ul>
-                    <li><a href="#">FEATURES</a></li>
-                    <li><a href="#">PRICING</a></li>
-                    <li><a href="#">CONTACT</a></li>
-                    <button class="menu-boton">LOGIN</button>
+            </nav>
+        </div>
 
-                </ul>
-            </div>
-        </nav>
     </header>
 
 
+    <!-- Main Body -->
     <main>
+
+        <!-- Hero banner-->
         <div id="contenedorMain">
             <div class="columna1Main">
                 <h2>A Simple Bookmark Manager</h2>
@@ -51,11 +77,67 @@
             <div class="columna2Main">
                 <img src="recursos/Recursosentrega S1.2.-20250519/Imagenes/illustration-hero.svg">
             </div>
-            
         </div>
+
+        
+        <!-- Banner Menu medio -->
+        <div id="contenedorMenuMedio">
+
+            <div class="textoCentral">
+                <h2>Features</h2>
+                <p>Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
+            </div>
+
+            <div class="contenedorMenuMedio">
+                <ul class="menuMedio">
+                    <li>Simple Bookmarking</li>
+                    <li>Speedy Searching</li>
+                    <li>Easy Sharing</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="contenedorMain2">
+            <div class="columna2Main">
+                <img src="recursos/Recursosentrega S1.2.-20250519/Imagenes/illustration-hero.svg">
+            </div>
+            
+            <div class="columna1Main2">
+                <h2>Bookmark in one click</h2>
+                <p>Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites. </p>
+                <ul> 
+                    <button type="button">More Info</button>
+                </ul>
+            </div>
+
+        </div>
+
+
+        <div class="textoCentral">
+            <h2>Download the extension</h2>
+            <p>We've got more brownsers in the pipeline. Please do let us know if you've got a favourite you'd like us to prioritize.</p>
+        </div>
+
+        <div class="textoCentral">
+            <h2>Frequently Asked Questions</h2>
+            <p>Here are some of our FAQs. If you have any other questions you'd like answered please feel free to email us.</p>
+        </div>
+
+
     </main>
 
+
 <footer>
+    <div class="containerColorFinal">
+        <h5>35,000+ ALREADY JOINED</h5>
+        <p>Stay up-to-date with what we're doing</p>
+        <div class="containerInput">
+            <input type="text" class="input" placeholder="Enter your email address"></input>
+            <button type=button>Contact Us</button>
+        </div>
+
+    </div> 
+
 </footer>
 
 </body>
