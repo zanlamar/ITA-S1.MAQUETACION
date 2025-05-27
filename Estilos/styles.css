@@ -178,6 +178,8 @@ html {
     font-weight: 500px;
     font-family: "Rubik", sans-serif;
 
+    box-shadow: 1px 5px 10px 1px #e5e7f3;
+
 
 }
 
@@ -205,6 +207,8 @@ html {
             display: flex;
             justify-content: center;
             padding: 2% 12%;
+
+            max-width: max-content;
 
         }
 
@@ -235,7 +239,7 @@ html {
         }
 
         .columna1Main ul{
-            display: block;
+            display: flex;
             align-items: center;
             list-style-type: none;
             margin-top: 15px;
@@ -492,6 +496,8 @@ html {
     font-size: 15px;
     font-weight: 500px;
     font-family: "Rubik", sans-serif;
+
+
 }
 
     @media (max-width: 900px){
@@ -539,6 +545,7 @@ html {
 
         .columna1Main2 button {
             display: none;
+            box-shadow: 1px 5px 10px 1px #e5e7f3;
         }
 
         .textoCentral {
@@ -566,82 +573,119 @@ html {
             margin-top: 15px;
             margin-bottom: 15px;  
         }
-
     }
 
-    #containerCards {
-        display: flex;
-        flex-direction: row;
+#containerCards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 25px 15%;
+}
 
-        justify-content: space-evenly;
-        align-items: ;
+#containerCards .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-        padding: 25px 8%;
-    }
+    border-radius: 3%;
+    box-shadow: -2px 22px 22px 10px #F4F4F4;
+    padding: 3% 0.5%;
+    margin: 1rem 0;
 
-    #containerCards .card {
-        display: flex;
+    min-width: 250px;
+}
+
+#cardText {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 30px;
+    margin-bottom: 10px;
+    gap: 0.5rem;
+
+}
+
+.card img{
+    margin-top: 10px;
+}
+
+.card h5 {
+    display: flex;
+
+    color:#222222;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+
+    justify-content: center;
+    margin: 0px;
+}
+
+.card p {
+    display: flex;
+    align-items: top;
+    color:#9194a1;
+    margin: 0px;
+}
+
+#dots {
+    margin: 25px 0;
+    width: fit-content;
+    max-width: 400px;
+
+    overflow:
+}
+
+.card button {
+    color: #F4F4F4;
+    background-color:#5265E1;
+    border: none;
+    border-radius: 5px;
+    width: 90%;
+
+    padding: 5% 4%;
+    justify-self: center;
+    font-family: "Rubik", sans-serif;
+    font-size: 15px;
+    font-weight: 450;
+
+    box-shadow: 1px 5px 10px 1px #e5e7f3;
+
+}
+
+@media (max-width: 900px){
+
+    #containerCards{
+        display: grid;
         flex-direction: column;
-        align-items: center;
 
+        gap: 3rem;
+
+        margin: 0 10px;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    #containerCards .card{
         border-radius: 3%;
         box-shadow: -2px 22px 22px 10px #F4F4F4;
+        padding: 2rem 0;
+        margin: 1rem 0px;
 
-        padding: 3% 1%;
-        margin: 1rem 0;
-    }
-
-    #cardText {
-        display: flex;
-        flex-direction:column;
-        justify-content: center;
+        min-width: 250px;
+        max-width: 800px;
         align-items: center;
-
-        margin-top: 30px;
-        margin-bottom: 10px;
-        gap: 1rem;
-
-    }
-
-    .card h5 {
-        display: flex;
-
-        color:#222222;
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 500;
-
-        justify-content: center;
-        margin: 0px;
-    }
-
-    .card p {
-        display: flex;
-        align-items: top;
-        color:#9194a1;
-        margin: 0px;
+        margin-inline: 100px;
     }
 
     #dots {
         margin: 25px 0;
-        width: 100%;
+        max-width: 700px;
     }
-
-    .card button {
-        color: #F4F4F4;
-        background-color:#5265E1;
-        border: none;
-        border-radius: 5px;
-        width: 90%;
-
-        padding: 5% 4%;
-        justify-self: center;
-        font-family: "Rubik", sans-serif;
-        font-size: 15px;
-        font-weight: 450;
-
-
-    }
+}
 
 
 
@@ -758,7 +802,11 @@ html {
         margin-top: 30px;
         margin-bottom: 30px;
 
-        padding: 0 10%;
+
+    }
+
+    .containerInput input{
+        max-width: 800px;;
 
     }
 
@@ -767,7 +815,7 @@ html {
         margin-top: 30px;
         margin-bottom: 30px;
 
-        font-weight: 800;
+        font-weight: 300;
         
     }
 
