@@ -494,79 +494,156 @@ html {
     font-family: "Rubik", sans-serif;
 }
 
-@media (max-width: 900px){
+    @media (max-width: 900px){
 
-    #contenedorMain2 {
+        #contenedorMain2 {
+            display: flex;
+            flex-direction: column;
+            
+            max-height: none;
+            justify-content: center;
+            align-items: center;
+
+            padding: 3% 5
+            %;
+
+        }
+
+        .columna1Main2 {
+            padding: 5.20% 12%;
+            
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .columna1Main2 p {
+            text-align: center;
+            padding: 0% 0%;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            font-size: 20px;
+            font-weight: 350;
+            line-height: 35px;
+        }
+
+        .columna1Main2 h2{
+            display: flex;
+            text-align: center;
+            padding: 0% 12%;
+            margin-top: 15px;
+            margin-bottom: 15px;  
+
+            font-size: 35px;
+        }
+
+        .columna1Main2 button {
+            display: none;
+        }
+
+        .textoCentral {
+            padding: 5.20% 12%;
+            
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .textoCentral p {
+            text-align: center;
+            padding: 0% 0%;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            font-size: 20px;
+            font-weight: 350;
+            line-height: 35px;
+        }
+
+        .textoCentral h2 {
+            display: flex;
+            text-align: center;
+            padding: 0% 12%;
+            margin-top: 15px;
+            margin-bottom: 15px;  
+        }
+
+    }
+
+    #containerCards {
+        display: flex;
+        flex-direction: row;
+
+        justify-content: space-evenly;
+        align-items: ;
+
+        padding: 25px 8%;
+    }
+
+    #containerCards .card {
         display: flex;
         flex-direction: column;
-        
-        max-height: none;
+        align-items: center;
+
+        border-radius: 3%;
+        box-shadow: -2px 22px 22px 10px #F4F4F4;
+
+        padding: 3% 1%;
+        margin: 1rem 0;
+    }
+
+    #cardText {
+        display: flex;
+        flex-direction:column;
         justify-content: center;
         align-items: center;
 
-        padding: 3% 5%;
+        margin-top: 30px;
+        margin-bottom: 10px;
+        gap: 1rem;
 
     }
 
-    .columna1Main2 {
-        padding: 5.20% 12%;
-        
+    .card h5 {
         display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
 
-    .columna1Main2 p {
-        text-align: center;
-        padding: 0% 0%;
-        margin-top: 15px;
-        margin-bottom: 15px;
+        color:#222222;
         font-size: 20px;
-        font-weight: 350;
-        line-height: 35px;
+        font-style: normal;
+        font-weight: 500;
+
+        justify-content: center;
+        margin: 0px;
     }
 
-    .columna1Main2 h2{
+    .card p {
         display: flex;
-        text-align: center;
-        padding: 0% 12%;
-        margin-top: 15px;
-        margin-bottom: 15px;  
-
-        font-size: 35px;
+        align-items: top;
+        color:#9194a1;
+        margin: 0px;
     }
 
-    .columna1Main2 button {
-        display: none;
+    #dots {
+        margin: 25px 0;
+        width: 100%;
     }
 
-    .textoCentral {
-        padding: 5.20% 12%;
-        
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    .card button {
+        color: #F4F4F4;
+        background-color:#5265E1;
+        border: none;
+        border-radius: 5px;
+        width: 90%;
+
+        padding: 5% 4%;
+        justify-self: center;
+        font-family: "Rubik", sans-serif;
+        font-size: 15px;
+        font-weight: 450;
+
+
     }
 
-    .textoCentral p {
-        text-align: center;
-        padding: 0% 0%;
-        margin-top: 15px;
-        margin-bottom: 15px;
-        font-size: 20px;
-        font-weight: 350;
-        line-height: 35px;
-    }
 
-    .textoCentral h2 {
-        display: flex;
-        text-align: center;
-        padding: 0% 12%;
-        margin-top: 15px;
-        margin-bottom: 15px;  
-    }
-
-}
 
 .containerColorFinal{
     background-color: #5265E1;
@@ -689,6 +766,9 @@ html {
     .containerColorFinal button {
         margin-top: 30px;
         margin-bottom: 30px;
+
+        font-weight: 800;
+        
     }
 
 
