@@ -391,6 +391,8 @@ html {
     .menuMedio ul{
         gap: 3rem;
         font-size: 25px;
+
+        border-bottom-style: none;
     }
 
     .menuMedio li:hover{
@@ -486,6 +488,79 @@ html {
     font-family: "Rubik", sans-serif;
 }
 
+@media (max-width: 900px){
+
+    #contenedorMain2 {
+        display: flex;
+        flex-direction: column;
+        
+        max-height: none;
+        justify-content: center;
+        align-items: center;
+
+        padding: 5.20% 12%;
+
+    }
+
+    .columna1Main2 {
+        padding: 5.20% 12%;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .columna1Main2 p {
+        text-align: center;
+        padding: 0% 0%;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        font-size: 20px;
+        font-weight: 350;
+        line-height: 35px;
+    }
+
+    .columna1Main2 h2{
+        display: flex;
+        text-align: center;
+        padding: 0% 12%;
+        margin-top: 15px;
+        margin-bottom: 15px;  
+
+        font-size: 35px;
+    }
+
+    .columna1Main2 button {
+        display: none;
+    }
+
+    .textoCentral {
+        padding: 5.20% 12%;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .textoCentral p {
+        text-align: center;
+        padding: 0% 0%;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        font-size: 20px;
+        font-weight: 350;
+        line-height: 35px;
+    }
+
+    .textoCentral h2 {
+        display: flex;
+        text-align: center;
+        padding: 0% 12%;
+        margin-top: 15px;
+        margin-bottom: 15px;  
+    }
+
+}
 
 .containerColorFinal{
     background-color: #5265E1;
@@ -522,10 +597,18 @@ html {
     border: 0px;
 }
 
-.concontainerInput{
+#containerInput{
     align-content: center;
     justify-content: center;
-    
+    display: flex;
+    flex-direction: row;
+
+    padding: 0px 15px;    
+}
+
+#containerInput input{
+    padding: 0px 15px;    
+    margin: 0 0px;
 }
 
 
@@ -541,9 +624,60 @@ html {
     border-radius: 5px;
     border: 0px;
     font-weight: 300;
+    
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 12px;
     padding-bottom: 12px;
 
 }
+
+@media (max-width: 900px) {
+
+    .containerColorFinal {
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;;
+    }
+
+    .containerColorFinal h5 {
+        letter-spacing: 12px;
+        font-weight: 450;
+    }
+
+    .containerColorFinal p {
+        font-weight: 450;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        padding: 0 5%;
+    }
+    
+    #containerInput {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+
+        margin-top: 30px;
+        margin-bottom: 30px;
+
+        padding: 0 10%;
+
+    }
+
+
+    .containerColorFinal button {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+
+
+}
+
+
