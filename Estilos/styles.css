@@ -8,7 +8,6 @@ html {
 .navbarDesktop {
     background-color: white;
     display: flex;
-    max-width: 1440px;
     max-height: 80px;
     align-items: center;
     justify-content: space-between;
@@ -120,7 +119,6 @@ html {
 #contenedorMain {
     background-color: white;
     display: flex;
-    max-width: 1440px;
     max-height: 590px;
     align-items: center;
     padding: 5.20% 12%;
@@ -186,10 +184,13 @@ html {
 .columna2Main {
     align-items: right;
     justify-content: space-between;
+
 }
 .columna2Main img{
-    width: 600px;
     margin: 0;
+    max-width: 550px;
+    min-width: 2vh;
+
 }
 
     @media (max-width: 900px) {
@@ -216,7 +217,7 @@ html {
         .columna1Main h2 {
             display: flex;
             text-align: center;
-            padding: 0% 12%;
+            padding: 0% 5%;
             margin-top: 15px;
             margin-bottom: 15px;
             
@@ -230,8 +231,7 @@ html {
 
             font-size: 25px;
             font-weight: 350;
-            line-height: 35px;
-    
+            line-height: 30px;    
         }
 
         .columna1Main ul{
@@ -243,12 +243,14 @@ html {
         }
 
         .columna2Main {
-        align-items: right;
-        justify-content: space-between;
+            align-items: right;
+            justify-content: space-between;
+            padding: 0px;
         }
 
         .columna2Main img{
-            width: 600px;
+            max-width: flex;
+            min-width: 300px;;
             margin: 0;
         }
     }
@@ -312,7 +314,7 @@ html {
         margin-bottom: 15px;
         font-size: 20px;
         font-weight: 350;
-        line-height: 35px;
+        line-height: 20px;
     
     }
 
@@ -393,6 +395,10 @@ html {
         font-size: 25px;
 
         border-bottom-style: none;
+        justify-content: center;
+        max-width: max-content;
+        min-width: min-content;
+        padding: 5.20% 12%;
     }
 
     .menuMedio li:hover{
@@ -498,7 +504,7 @@ html {
         justify-content: center;
         align-items: center;
 
-        padding: 5.20% 12%;
+        padding: 3% 5%;
 
     }
 
@@ -579,8 +585,7 @@ html {
 
     margin-block: 5px;
     padding-top: 1%;
-    padding-bottom: 5%;
-
+    padding-bottom: 3%;
 }
 
 .containerColorFinal p {
@@ -595,6 +600,7 @@ html {
     width: 250px;
     border-radius: 5px;
     border: 0px;
+
 }
 
 #containerInput{
@@ -608,7 +614,7 @@ html {
 
 #containerInput input{
     padding: 0px 15px;    
-    margin: 0 0px;
+    margin: 0 30px;
 }
 
 
@@ -636,16 +642,25 @@ html {
 
     .containerColorFinal {
         display: flex;
-        flex-direction: column;
-
         align-items: center;
+
+        flex-direction: space-between;
+        flex-wrap: wrap;
+
         justify-content: center;
-        margin-bottom: 10px;;
+
+        max-height: max-content;
+        max-width: 100%;
+        min-width: min-content;
+
+
     }
 
     .containerColorFinal h5 {
         letter-spacing: 12px;
         font-weight: 450;
+        padding: 0 4%;
+
     }
 
     .containerColorFinal p {
@@ -653,8 +668,8 @@ html {
         display: flex;
         align-items: center;
         justify-content: center;
+        padding: 0 4%;
 
-        padding: 0 5%;
     }
     
     #containerInput {
