@@ -1,3 +1,8 @@
 @use 'hojasEstilos/globales/variables' as *;
 @use 'hojasEstilos/layout/layout';
-@use '../scss/hojasEstilos/mixins/mixins';
+@use 'hojasEstilos/mixins/mixins';
+@import 'hojasEstilos/layout/navbar';
+
+
+
+

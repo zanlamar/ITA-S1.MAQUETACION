@@ -1,3 +1,7 @@
-@use '../globales/variables' as *;
+@use 'hojasEstilos/globales/variables' as *;
 
-// IRÁ TODO MOBILE FIRST: 768px width
+// IRÁ TODO MOBILE FIRST: 768px width ya en variable
+
+.navbarDesktop {
+    display: none;
+}
