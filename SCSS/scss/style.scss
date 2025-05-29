@@ -1,1 +1,3 @@
-@forward 'hojas estilos/globales/';
+@use 'hojasEstilos/globales/variables' as *;
+@use 'hojasEstilos/layout/layout';
+@use '../scss/hojasEstilos/mixins/mixins';
