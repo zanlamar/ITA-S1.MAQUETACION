@@ -1,7 +1,6 @@
-@use '../globales/variables' as *;
+@use '../globales/setup' as *;
 
 // IRÁ TODO MOBILE FIRST: 768px width ya en variable
-
 
 .navbarDesktop {
     display: none;
@@ -16,12 +15,16 @@
         margin: 3em 10%;
         gap: 1.5em;
 
+        
         &-menu {
             display: flex; 
             flex-direction: row;
+
             
             img {
                 max-height: 40px;
+                display:flex;
+
             }
             
             ul {
@@ -30,31 +33,24 @@
                 align-items: center;
                 flex-basis: 100%;
                 padding: 0;
-                gap: 3em;           
-    
+                gap: 3em;     
+                
             }
             
-            
-                
-            
-
-}
-
             .navbarDesktop-CTAButton {
                 @include CTAButton;
             }
-        }
             
-
-
-        
+            li {
+                a {
+                    text-decoration: none;
+                }
+            }
+                
+        }
     }
-
-
-        
-
-
-
+    
+}
 
 
 
@@ -96,4 +92,8 @@
     }
     
     
+}
+
+main {
+    color:aqua;
 }

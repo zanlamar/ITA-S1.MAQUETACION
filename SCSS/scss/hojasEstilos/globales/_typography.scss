@@ -20,9 +20,12 @@ p {
     color: colors.$color-textParagraph;
 }
 
+
 a,
 a:visited,
 a:active {
     text-decoration: none;
+    color: colors.$color-headlines;
 }
+
 
