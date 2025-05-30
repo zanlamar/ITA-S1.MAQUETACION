@@ -6,20 +6,65 @@
 .navbarDesktop {
     display: none;
 
-    @media screen and (min-width: $breakpoint-desktop) {
-        display: flex
-    }
+    @media (min-width: $breakpoint-desktop) {
+        display: flex;
+        flex-direction: row;
+        flex-basis: 100%;
+
+        align-items: center;
+        justify-content: space-between;
+        margin: 3em 10%;
+        gap: 1.5em;
+
+        &-menu {
+            display: flex; 
+            flex-direction: row;
+            
+            img {
+                max-height: 40px;
+            }
+            
+            ul {
+                display: flex;
+                list-style-type: none;
+                align-items: center;
+                flex-basis: 100%;
+                padding: 0;
+                gap: 3em;           
+    
+            }
+            
+            
+                
+            
+
 }
 
+            .navbarDesktop-CTAButton {
+                @include CTAButton;
+            }
+        }
+            
+
+
+        
+    }
+
+
+        
+
+
+
+
+
+
 .navbarMobile {
-    
-    @media screen and (min-width: $breakpoint-desktop) {
+
+    @media (min-width: $breakpoint-desktop) {
         display: none;
     }
 
     display: flex;
-
-    
     flex-direction: row;
     flex-basis: 100%;
     
@@ -46,8 +91,7 @@
         }    
         
         img {
-            height: 20px;;
-            
+            height: 20px;
         }
     }
     
