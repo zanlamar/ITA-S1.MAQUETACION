@@ -1,7 +1,55 @@
-@use 'hojasEstilos/globales/variables' as *;
+@use '../globales/variables' as *;
 
 // IRÁ TODO MOBILE FIRST: 768px width ya en variable
 
+
 .navbarDesktop {
     display: none;
+
+    @media screen and (min-width: $breakpoint-desktop) {
+        display: flex
+    }
+}
+
+.navbarMobile {
+    
+    @media screen and (min-width: $breakpoint-desktop) {
+        display: none;
+    }
+
+    display: flex;
+
+    
+    flex-direction: row;
+    flex-basis: 100%;
+    
+    align-items: center;
+    justify-content: space-between;
+    
+    margin: 2.5em 2.5em;
+    gap: 150px;
+    
+    
+    &-logo {
+        justify-content: left;
+        
+        img {
+            justify-content: right;
+            height: 40px;
+        }
+    } 
+    
+    .navbarMobile-containerCheck {
+        
+        #check {
+            display: none;
+        }    
+        
+        img {
+            height: 20px;;
+            
+        }
+    }
+    
+    
 }
