@@ -30,6 +30,27 @@
         font-weight: 400;
     }
 
+    @media (min-width: $breakpoint-desktop) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        margin: 3em auto;
+
+        gap: 10px;
+
+        h2 {
+            margin: 0 
+        }
+
+        p {
+            padding: 0 auto;
+            margin: 1em 25%;
+
+        }
+
+    }
+
 }
 
 
@@ -49,5 +70,12 @@
         margin-top: 30px;
         margin-bottom: 10px;
     }
+}
 
+.containerCards {
+    @media (min-width: $breakpoint-desktop) {
+        display: flex;
+        flex-direction: row;
+        align-content: space-evenly;
+    }
 }
