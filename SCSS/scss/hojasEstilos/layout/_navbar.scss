@@ -12,8 +12,9 @@
 
         align-items: center;
         justify-content: space-between;
-        margin: 3em 10%;
         gap: 1.5em;
+        margin: 3em 10%;
+
 
         
         &-menu {
@@ -33,7 +34,7 @@
                 align-items: center;
                 flex-basis: 100%;
                 padding: 0;
-                gap: 3em;     
+                gap: 2em;     
                 
             }
             
@@ -53,7 +54,6 @@
 }
 
 
-
 .navbarMobile {
 
     @media (min-width: $breakpoint-desktop) {
@@ -66,8 +66,13 @@
     
     align-items: center;
     justify-content: space-between;
+    max-width: 100%;
+
+    // esto ultimo habra que verlo
+    // width:max-content;
+
     
-    margin: 2.5em 2.5em;
+    margin: 3em 3em;
     gap: 150px;
     
     
@@ -92,8 +97,4 @@
     }
     
     
-}
-
-main {
-    color:aqua;
 }
