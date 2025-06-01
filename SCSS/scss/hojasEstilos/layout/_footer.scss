@@ -71,16 +71,22 @@
 }
 
 @media (min-width: $breakpoint-desktop) {
+    .containerFooter {
+        h5 {
+            padding-top: 2em;
+        }
 
-.containerFooter {
-    justify-content: center;
-    align-content: center;
-    text-align: center;
 
-    margin: 0 auto;
-    padding-top: 1.5rem;
-    padding-bottom: 3rem;
+        .containerFooter-input {
+            display: flex;
+            flex-direction: row;  
+        }
 
-    color: $color-background
-}
+        button {
+            padding: 0.8rem 1.5rem;
+             white-space: nowrap;
+        }
+
+        
+    }
 }
