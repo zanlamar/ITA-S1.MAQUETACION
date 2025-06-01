@@ -12,8 +12,10 @@
 
         align-items: center;
         justify-content: space-between;
-        gap: 1.5em;
-        margin: 3em 10%;
+        gap: 10rem;
+        
+        margin: 3em auto;
+        padding: 0 10rem;
 
 
         
@@ -66,13 +68,9 @@
     
     align-items: center;
     justify-content: space-between;
-    max-width: 100%;
 
-    // esto ultimo habra que verlo
-    // width:max-content;
-
-    
-    margin: 3em 3em;
+    margin: 3em auto;
+    padding: 0 10%;
     gap: 150px;
     
     
