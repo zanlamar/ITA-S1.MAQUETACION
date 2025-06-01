@@ -72,10 +72,27 @@
     }
 }
 
-.containerCards {
-    @media (min-width: $breakpoint-desktop) {
+
+@media (min-width: $breakpoint-desktop) {
+
+    .containerCards {
         display: flex;
-        flex-direction: row;
-        align-content: space-evenly;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        margin: 5em auto;
+        padding: 0 5rem;
+        gap: 4rem;
+
+    }
+
+    .card {
+        margin: 0;
+        width: 300px;
+        max-width: none;
     }
 }
+
+
+
+

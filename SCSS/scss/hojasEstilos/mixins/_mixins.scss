@@ -85,7 +85,7 @@
     max-width: 800px;
 
 
-    margin-inline: 100px;
+    // margin-inline: 100px;
 
     button {
         @include cardButton;
@@ -122,9 +122,41 @@
         font-size: 17px;
         color: $color-textParagraph;
     }
+}
+
+    @mixin cardDesktop {
+        @media (max-width: 900px){
+
+        .containerCards {
+            display: grid;
+            flex-direction: column;
+
+            gap: 3rem;
+
+            margin: 0 10px;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .card {
+            border-radius: 3%;
+            box-shadow: 0px 9px 25px 5px #E2E0D9;
+            padding: 2rem 0;
+            margin: 1rem 0px;
+
+            min-width: 250px;
+            max-width: 800px;
+            align-items: center;
+            margin-inline: 100px;
+        }
+
+    }
+
+}
 
     
-}
+
     
 
 

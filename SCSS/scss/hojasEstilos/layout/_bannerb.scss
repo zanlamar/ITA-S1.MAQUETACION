@@ -17,10 +17,10 @@
         align-items: center;
         justify-content: space-between;
 
-        margin: 3em auto;
+        margin: 10em auto;
         padding: 0 5rem;
 
-        gap: 10px;
+        gap: 15px;
 
 
         &-text {
@@ -54,10 +54,5 @@
             @include button
         }
     }
-
-    
-
-  
-
-
 }
+ 
