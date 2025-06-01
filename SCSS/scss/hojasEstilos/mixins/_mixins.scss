@@ -52,3 +52,36 @@
     min-width: 250px;
     box-shadow: 0px 9px 25px 5px #E2E0D9;
 }
+
+@mixin h2andText-Mobile {
+    display: flex;
+    flex-basis: 100%;
+
+    align-items: center;
+    justify-content: center;
+    max-height: none;
+    align-content: flex-start;
+
+    margin: 6em auto;
+    padding: 0 3rem;
+
+    &-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        margin: 0;
+        text-align: center;
+    }
+
+    p {
+        line-height: 29px;
+        font-weight: 400;
+        line-height: 29px;
+    }
+
+    h2 {
+        margin-bottom: 20px;
+
+    }
+}

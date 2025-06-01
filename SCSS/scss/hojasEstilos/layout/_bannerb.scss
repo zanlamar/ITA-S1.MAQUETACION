@@ -1,0 +1,63 @@
+@use '../globales/setup' as *;
+
+
+.contenedorBannerB {
+    flex-direction: column;
+    @include h2andText-Mobile;
+
+    button {
+        display: none;
+    }
+
+
+    @media (min-width: $breakpoint-desktop) {
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        margin: 3em auto;
+        padding: 0 5rem;
+
+        gap: 10px;
+
+
+        &-text {
+            display: flex;
+            align-items: flex-start;
+            text-align: left;
+
+            width: 50%;
+            padding-right: 3%;
+        }
+
+        ul {
+            display: flex; 
+            align-items: center;
+
+            gap: 1rem;
+            margin: 0;
+            padding:0;
+        }
+
+        &-img {
+            display: flex;
+
+            img {
+                height: auto;            
+            }
+        }
+
+        button {
+            display: flex;
+            @include button;
+        }
+    }
+
+    
+
+  
+
+
+}
