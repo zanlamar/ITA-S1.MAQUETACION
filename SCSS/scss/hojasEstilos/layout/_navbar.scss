@@ -1,0 +1,121 @@
+@use '../globales/setup' as *;
+
+// IRÁ TODO MOBILE FIRST: 768px width ya en variable
+
+.navbarDesktop {
+    display: none;
+
+    @media (min-width: $breakpoint-desktop) {
+        display: flex;
+        flex-direction: row;
+        flex-basis: 100%;
+
+        align-items: center;
+        justify-content: space-between;
+        gap: 10rem;
+        
+        margin: 3em auto;
+        padding: 0 10rem;
+
+
+        
+        &-menu {
+            display: flex; 
+            flex-direction: row;
+
+            
+            img {
+                max-height: 40px;
+                display:flex;
+
+            }
+            
+            ul {
+                display: flex;
+                list-style-type: none;
+                align-items: center;
+                flex-basis: 100%;
+                padding: 0;
+                gap: 2em;     
+                
+            }
+            
+            .navbarDesktop-CTAButton {
+                @include CTAButton;
+
+                .button-grow {
+                }
+
+                
+                &:hover {
+                    background-color: $color-headlines;
+                    border-radius: 10;
+                    border-width: 2px;
+                    border-color: $color-secundario;
+
+                    color: $color-background;
+                    transform: scale(1.1);
+
+                }
+            }
+            
+            li {
+                a {
+                    text-decoration: none;
+                }
+            }
+
+            a:hover {
+            color: #FA5959;
+            }
+                
+        }
+    }
+    
+}
+
+
+.navbarMobile {
+
+    @media (min-width: $breakpoint-desktop) {
+        display: none;
+    }
+
+    display: flex;
+    flex-direction: row;
+    flex-basis: 100%;
+    
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 3em auto;
+    padding: 0 10%;
+    gap: 150px;
+
+    a:hover {
+        color: $color-accent;
+        }
+    
+    
+    &-logo {
+        justify-content: left;
+        
+        img {
+            justify-content: right;
+            height: 40px;
+        }
+    } 
+    
+    .navbarMobile-containerCheck {
+        
+        #check {
+            display: none;
+        }    
+        
+        img {
+            height: 20px;
+        }
+    }
+    
+    
+}

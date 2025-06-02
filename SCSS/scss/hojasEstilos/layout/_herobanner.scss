@@ -1,0 +1,125 @@
+@use '../globales/setup' as *;
+
+
+.contenedorMain {
+    flex-direction: column-reverse;
+    
+    display: flex;
+    flex-basis: 100%;
+
+    align-items: center;
+    justify-content: center;
+    max-height: none;
+    align-content: flex-start;
+
+    margin: 6em auto;
+    padding: 0 3rem;
+
+
+    &-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        margin: 0;
+        text-align: center;
+
+        p {
+            line-height: 29px;
+            font-weight: 400;
+            line-height: 29px;
+        }
+
+        ul {
+            display:flex;
+            flex-direction: row;
+            gap: 1em;
+            padding: 0%;
+        }
+
+
+        .contenedorMain-button {
+            @include button;
+
+            &:hover {
+                background-color: $color-background;
+                border: solid;
+                border-radius: 10;
+                border-width: 2px;
+                border-color: $color-secundario;
+
+                color: $color-secundario;
+                font-style: bold;
+            }
+            
+        }
+    }
+
+    &-img {
+        display: flex;
+        align-content: center;
+        justify-items: center;
+        justify-content: flex-end;
+
+
+        .img {
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            width: fit-contet;
+        }
+
+    }
+
+    @media (min-width: $breakpoint-desktop) {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        margin: 3em auto;
+        padding: 0 5rem;
+
+        gap: 10px;
+
+
+
+        &-text {
+            display: flex;
+            align-items: flex-start;
+            text-align: left;
+            align-content: left;
+
+            width: 50%;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        &-contenedorMain-botones {
+            align-items: flex-start;
+
+        }
+
+        ul {
+            display: flex; 
+            align-items: center;
+
+            gap: 1rem;
+            margin: 0;
+            padding:0;
+        }
+
+        &-img {
+            display:flex;
+
+            img {
+                height: auto;            
+            }
+        }
+
+
+    }
+
+}

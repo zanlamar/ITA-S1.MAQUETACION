@@ -1,0 +1,115 @@
+@use '../globales/setup' as *;
+
+.contenedorMenuMedio {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    align-items: center;
+    justify-content: center;
+    max-height: none;
+    align-content: flex-start;
+
+    margin: 3em auto;
+    padding: 0 3rem;
+
+
+
+    &-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        margin: 0;
+        text-align: center;
+    
+    }
+
+    p {
+        line-height: 29px;
+        font-weight: 400;
+    }
+
+    ul {
+
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+
+        padding: 0px  70px;
+
+        gap: 0;
+        
+        justify-content: center;
+        max-width: max-content;
+        min-width: min-content;
+    }
+    
+    li {
+        font-size: 25px;
+        font-weight: 500px;
+        font-style: normal;
+        text-align: center;
+        
+        padding: 1em  100px;
+        color: $color-textParagraph;
+
+
+        border-bottom-style: solid;
+
+        border-bottom-color: $color-textParagraph;
+        border-bottom-width: 1px;
+        border-top-color: $color-textParagraph;
+        border-top-width: 1px;
+
+        
+    }
+    
+    li:hover {
+        border-bottom-style: solid;
+        border-bottom-color: $color-accent;
+        border-bottom-width: 3px;
+        
+        color: $color-headlines;
+        font-weight: 800px;
+    }
+
+
+    @media (min-width: $breakpoint-desktop) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        margin: 3em auto;
+
+        gap: 10px;
+
+        h2 {
+            margin: 0 
+        }
+
+        p {
+            padding: 0 auto;
+            margin: 1em 25%;
+
+        }
+
+        ul {
+            display: flex; 
+            flex-direction: row;
+        }
+
+        li {
+            padding: 1em  2em;
+
+            font-size: 20px;
+            font-weight: 500px;
+
+        }
+        
+
+
+    }
+
+
+}
