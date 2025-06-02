@@ -43,9 +43,6 @@
             .navbarDesktop-CTAButton {
                 @include CTAButton;
 
-                .button-grow {
-                }
-
                 
                 &:hover {
                     background-color: $color-headlines;
