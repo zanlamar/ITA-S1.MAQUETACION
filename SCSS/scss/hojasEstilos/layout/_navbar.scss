@@ -42,12 +42,31 @@
             
             .navbarDesktop-CTAButton {
                 @include CTAButton;
+
+                .button-grow {
+                }
+
+                
+                &:hover {
+                    background-color: $color-headlines;
+                    border-radius: 10;
+                    border-width: 2px;
+                    border-color: $color-secundario;
+
+                    color: $color-background;
+                    transform: scale(1.1);
+
+                }
             }
             
             li {
                 a {
                     text-decoration: none;
                 }
+            }
+
+            a:hover {
+            color: #FA5959;
             }
                 
         }
@@ -72,6 +91,10 @@
     margin: 3em auto;
     padding: 0 10%;
     gap: 150px;
+
+    a:hover {
+        color: $color-accent;
+        }
     
     
     &-logo {

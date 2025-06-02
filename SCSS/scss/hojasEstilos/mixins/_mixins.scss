@@ -32,6 +32,8 @@
 @mixin CTAButton {
     background-color: $color-accent;
     color: $color-background;
+    transition: all 0.3s ease-in-out;
+
 
     border-radius: 10px;
     border: 0px;
@@ -39,6 +41,8 @@
     padding: 12px 35px;
     font-family: "Rubik", sans-serif;
 }
+
+
 
 
 @mixin h2andText-Mobile {

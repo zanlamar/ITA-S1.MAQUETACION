@@ -40,6 +40,18 @@
 
         .contenedorMain-button {
             @include button;
+
+            &:hover {
+                background-color: $color-background;
+                border: solid;
+                border-radius: 10;
+                border-width: 2px;
+                border-color: $color-secundario;
+
+                color: $color-secundario;
+                font-style: bold;
+            }
+            
         }
     }
 
@@ -106,6 +118,8 @@
                 height: auto;            
             }
         }
+
+
     }
 
 }
