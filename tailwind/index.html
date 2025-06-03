@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="font-[Rubik]">
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Ana Laf">
@@ -19,7 +19,7 @@
 <body>
        
     <!-- Header -->
-    <header class="w-full px-8 py-10 bg-white font-[Rubik]">
+    <header class="w-full px-20 py-6 bg-white font-[Rubik]">
             <!-- Header desktop -->
             <nav class="hidden md:flex flex-row items-center justify-between gap-5 px-20 mx-auto">
                 <!-- Header desktop-logo -->
@@ -28,10 +28,10 @@
                 </div>
                 <!-- Header desktop-menu -->
                 <div>
-                    <ul class="flex flex-row items-center list-none h-10 m-0 p-0 gap-6 font-normal text-base tracking-wider">
-                        <li><a href="#" class=" text-slate-800 hover:text-[#fa5959]">FEATURES</a></li>
-                        <li><a href="#" class=" text-slate-800 hover:text-[#fa5959]">PRICING</a></li>
-                        <li><a href="#" class=" text-slate-800 hover:text-[#fa5959]">CONTACT</a></li>
+                    <ul class="flex flex-row items-center list-none h-10 m-0 p-10 gap-6 font-normal text-base tracking-wider">
+                        <li><a href="#" class=" text-slate-800 hover:text-rose-500">FEATURES</a></li>
+                        <li><a href="#" class=" text-slate-800 hover:text-rose-500">PRICING</a></li>
+                        <li><a href="#" class=" text-slate-800 hover:text-rose-500">CONTACT</a></li>
                         <li><button class="bg-[#fa5959] text-white px-8 py-3 rounded-[10px] font-light hover:bg-[#252b46] hover:scale-110 transition-transform">LOGIN</button></li>
                     </ul>
                 </div>
@@ -62,24 +62,32 @@
     <main>
 
         <!-- Hero banner-->
-        <div class="contenedorMain">
-            <div class="contenedorMain-text">
-                <h2>A Simple Bookmark Manager</h2>
-                <p>A clean and simple interface to organize your favourite websites. Open a new brownser tab and see your sites load instantly. Try it for free.</p>
-                <ul class="contenedorMain-botones"> 
-                    <li><button class="contenedorMain-button" type="button">Get it on Chrome</button></li>
-                    <li><button class="contenedorMain-button" type="button">Get it on Firefox</button></li>
+        <div class="gap-4 px-16 py-6 mx-auto flex flex-col-reverse md:flex-row items-center md:px-auto justify-between max-w-screen-xl">
+            
+            <!-- Hero banner - text -->
+            <div class="w-full md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left md:p-auto lg:my-24 space-x-6">
+                <h2 class="text-6xl md:text-5xl gap-8 font-medium not-italic text-slate-800 mb-6">A Simple Bookmark Manager</h2>
+                <p class="md:text-lg text-zinc-400 mb-6">A clean and simple interface to organize your favourite websites. Open a new brownser tab and see your sites load instantly. Try it for free.</p>
+                 <!-- Hero banner - container con botones -->
+                <ul class="flex md:text-sm flex-row gap-4 p-0 m-0"> 
+                    <!-- Hero banner - botones -->
+                    <li><button class="bg-indigo-500 text-white py-2 px-4 rounded-md hover:bg-white hover:text-indigo-500 hover:border-2 hover:border-secondary hover:text-secondary transition duration-300" type="button">Get it on Chrome</button></li>
+                    <li><button class="bg-indigo-500 text-white py-2 px-4 rounded-md hover:bg-white hover:text-slate-800 hover:border-2 hover:border-secondary hover:text-secondary transition duration-300" type="button" type="button">Get it on Firefox</button></li>
                 </ul>
             </div>
 
-            <div class="contenedorMain-img">
-                <img src="/vanilla/recursos/Recursosentrega S1.2.-20250519/Imagenes/illustration-hero.svg">
+             <!-- Hero banner - img -->
+            <div class="flex content-center justify-end">
+                <img src="/vanilla/recursos/Recursosentrega S1.2.-20250519/Imagenes/illustration-hero.svg" class="max-w-full h-auto object-contain">
             </div>
+
         </div>
 
         
         <!-- Banner Menu medio -->
         <div class="contenedorMenuMedio">
+
+        <!-- Banner Menu medio text -->
 
             <div class="contenedorMenuMedio-text">
                 <h2>Features</h2>
