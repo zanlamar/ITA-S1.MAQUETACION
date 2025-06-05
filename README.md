@@ -10,7 +10,13 @@ Primer proyecto de desarrollo de una página web en tres fases: vanilla (HTML + 
 2. Cada carpeta es una fase: vanilla, SCSS, tailwind.
 3. Abre el archivo index.html de la fase que quieras ver.
 
-## Notas
+## 📋 Takeaways
+- Nunca más este caos de repositorios. Si la base de entrega no está clara, preguntar en el minuto 0.
+- Reducir autoexigencia de calidad.
+- Necesidad de agilizar búsqueda de recursos (documentación, librerías, etc.)
+- Vigilar timings de entrega.
+  
+## 💬 Notas
 - Esta ha sido una primera toma de contacto con varias tecnologías: usar una terminal por primera vez ha sido aterrador pero necesario para la instalación de los programas.
 - Primera toma de contacto con la metodología del bootcamp: buscar documentación, librerías, tutoriales, métodos de entrega, etc. y aplicarlo de manera 100% autónoma. Parte del retraso de las entregas, el caos en el código, etc. viene de ahí. 
 - Existe MUCHO área de mejora en los resultados, mucho que pulir en la organización de los repositorios / git, código...
@@ -19,9 +25,4 @@ Primer proyecto de desarrollo de una página web en tres fases: vanilla (HTML + 
 - La IA me puede ayudar a salir del paso cuando me atasco, pero es una trampa: no es exacta para casos específicos y crea dependencia. Not a fan at all.
 
 
-## Takeaways
-- Nunca más este caos de repositorios. Si la base de entrega no está clara, preguntar en el minuto 0.
-- Reducir autoexigencia de calidad.
-- Necesidad de agilizar búsqueda de recursos (documentación, librerías, etc.)
-- Vigilar timings de entrega.
 
