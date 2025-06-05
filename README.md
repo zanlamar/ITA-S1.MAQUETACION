@@ -14,6 +14,14 @@ Primer proyecto de desarrollo de una página web en tres fases: vanilla (HTML + 
 - Esta ha sido una primera toma de contacto con varias tecnologías: usar una terminal por primera vez ha sido aterrador pero necesario para la instalación de los programas.
 - Primera toma de contacto con la metodología del bootcamp: buscar documentación, librerías, tutoriales, métodos de entrega, etc. y aplicarlo de manera 100% autónoma. Parte del retraso de las entregas, el caos en el código, etc. viene de ahí. 
 - Existe MUCHO área de mejora en los resultados, mucho que pulir en la organización de los repositorios / git, código...
-- Contar con los tips de Juan Luis Irene y Edison ha sido el mayor highlight de esta entrega.
+- ¿Contar con los tips de Juan Luis, Irene y Edison ha sido el mayor highlight de esta entrega? Sí.
 - El segundo highlight ha sido ver todo lo que se ha construido de -5.
+- La IA me puede ayudar a salir del paso cuando me atasco, pero es una trampa: no es exacta para casos específicos y crea dependencia. Not a fan at all.
+
+
+## Takeaways
+- Nunca más este caos de repositorios. Si la base de entrega no está clara, preguntar en el minuto 0.
+- Reducir autoexigencia de calidad.
+- Necesidad de agilizar búsqueda de recursos (documentación, librerías, etc.)
+- Vigilar timings de entrega.
 
